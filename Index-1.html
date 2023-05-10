@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio</title>
+        
+		<!--Estilos-->
+		<link rel="stylesheet"  href="Estilos.css">
+		<link rel="stylesheet"  href="animacion.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--final de Estilos-->
+
+
+		<!--Lógica-Programación-->
+		<script src="script.js"></script>
+        <!--Final de Lógica-Programación -->
+		
+
+	</head>
+	<body>
+        <!--Encabezado-->
+		<div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Hubert</a>
+                </div>
+                <nav id="nav" class="responsive">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </header>
+        </div>
+
+        <!--INICIO-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                <img src="me.jpg" alt="">
+                </div>
+                <h1>HUBERT MORENO REYES</h1>
+                <h2>Full stack web Developer</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-rss"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--SOBRE MI-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Hubert Moreno Reyes,</span> actualmente continúo capacitándome en tecnologías de sistemas de información, tengo 37 años y he venido haciendo código por mi cuenta desde hace un tiempo, lo considero uno de mis pasatiempos.</p>
+                <div class="fila">
+                    <!--datos personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                12-03-1986
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                11-37838318
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                hubert.jmr@gmail.com
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                www.ejemplo.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Magallanes 945 C.A.B.A - ARGENTINA
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                Free Lancer
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!--intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenido-intereses">
+                            <div class="intereses">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-brands fa-apple"></i>
+                                <span>MAC OS</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>DEPORTE</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-car"></i>
+                                <span>AUTOS</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>FOTOS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--HABILIDADES-->
+        <section id="skills" class="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>52%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>COMUNICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>91%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACION</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>74%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PROYECT MANAGEMENT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--CURRICULUM-->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Programación Web Full stack</h4>
+                            <span class="casa">Argentina Programa</span>
+                            <span class="fecha">2022-2023</span>
+                            <p>Repositorio GIT, Arquitectura web, Front end y Back end, Programación orientada a objetos (Java), Principios básicos de seguridad informática</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Tecnicatura en Programación</h4>
+                            <span class="casa">Universidad Tecnológica Nacional FRA</span>
+                            <span class="fecha">2018-2019(incompleto)</span>
+                            <p>Html, CSS y Javascript, introducción al lenguaje orientado a objetos, introducciónal lenguaje C y JAVA, comprensión de algoritmos</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Ingeniería de Sistemas</h4>
+                            <span class="casa">UTN FRBA</span>
+                            <span class="fecha">2016-2017(incompleto)</span>
+                            <p>Seminario universitario no finalizado, realización de cursos virtuales y aprendizaje autodidacta.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>       
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Front Developer</h4>
+                            <span class="casa">Nombre de Empresa</span>
+                            <span class="fecha">2022-2023</span>
+                            <p>Repositorio GIT, Arquitectura web, Front end y Back end, Programación orientada a objetos (Java), Principios básicos de seguridad informática</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Back Developer</h4>
+                            <span class="casa">Nombre de Empresa</span>
+                            <span class="fecha">2022-2023</span>
+                            <p>Repositorio GIT, Arquitectura web, Front end y Back end, Programación orientada a objetos (Java), Principios básicos de seguridad informática</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTAFOLIO-->
+		<section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>Portfolio</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="P6.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="P1.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="P2.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="P3.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="P7.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="P5.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>	
+
+        <!--CONTACTO-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>Contacto</h2>
+                <div class="fila">
+                    <!--Formulario-->
+                    <div class="col">
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="text" placeholder="Tu Número de telefono">
+                        <input type="text" placeholder="Tu Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!--Mapa-->
+                    <div class="col">
+                        <img src="ubicacion.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Magallanes 945, La Boca C.A.B.A
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    1137838318
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: hubert.jmr@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>
